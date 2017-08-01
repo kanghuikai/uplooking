@@ -1,0 +1,5 @@
+gcc
+mariadb-devel
+libxml2-devel
+net-snmp-devel
+libcurl-devel

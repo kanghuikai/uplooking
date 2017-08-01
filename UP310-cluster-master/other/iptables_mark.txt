@@ -1,0 +1,4 @@
+VIP=$1
+IPTABLES=/sbin/iptables
+$IPTABLES -t mangle -A PREROUTING -p tcp -d $VIP --dport 80 -j MARK --set-mark 100
+$IPTABLES -t mangle -A PREROUTING -p tcp -d $VIP --dport 443 -j MARK --set-mark 100

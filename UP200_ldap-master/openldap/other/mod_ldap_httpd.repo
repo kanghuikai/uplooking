@@ -1,0 +1,5 @@
+[mod_ldap_httpd]
+name = mod_ldap_httpd
+baseurl = http://172.25.254.254/content/courses/up200/rhel7.1/materials
+enabled = 1
+gpgcheck = 0
