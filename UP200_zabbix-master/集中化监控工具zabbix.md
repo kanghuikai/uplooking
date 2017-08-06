@@ -104,7 +104,7 @@ zabbix的安装包括四个部分：server服务端、agent数据收集端、web
 [root@serverb tmp]# yum install gcc gcc-c++ mariadb-devel libxml2-devel net-snmp-devel libcurl-devel -y
 # 安装源码编译需要的依赖包
 [root@serverb tmp]# cd zabbix-2.4.6/
-[root@serverb zabbix-2.4.6]#  ./configure --prefix=/usr/local/zabbix  --enable-agent --enable-server --with-mysql --
+[root@serverb zabbix-2.4.6]#  ./configure --prefix=/usr/local/zabbix-server --enable-server --with-mysql --with-net-snmp --with-libcurl --with-libxml2 --enable-agent --enable-ipv6
 [root@serverb zabbix-2.4.6]# make
 [root@serverb zabbix-2.4.6]# make install
 [root@serverb zabbix-2.4.6]# useradd zabbix        # 添加zabbix用户用以服务zabbix server端的正常运行
